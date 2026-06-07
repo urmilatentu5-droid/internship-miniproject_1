@@ -1,2 +1,2 @@
 # internship-miniproject_1
-Language Translation Interface
+Virtual Classroom Schedule Planner 
