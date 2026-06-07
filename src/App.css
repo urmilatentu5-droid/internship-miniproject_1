@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background: linear-gradient(
+        135deg,
+        #e0f7fa,
+        #f3e5f5,
+        #fff3e0
+    );
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+.container{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.planner-card{
+    width:100%;
+    max-width:700px;
+    background:#ffffff;
+    border-radius:25px;
+    padding:30px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+
+.planner-card h1{
+    text-align:center;
+    color:#5e35b1;
+    margin-bottom:25px;
+    font-size:2rem;
+}
+
+.form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.form input{
+    padding:14px;
+    border:2px solid #dcdcdc;
+    border-radius:12px;
+    outline:none;
+    font-size:16px;
+    transition:0.3s;
+}
+
+.form input:focus{
+    border-color:#7e57c2;
+}
+
+.form button{
+    padding:14px;
+    border:none;
+    border-radius:12px;
+    background:#7e57c2;
+    color:white;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.form button:hover{
+    background:#673ab7;
+    transform:translateY(-2px);
+}
+
+.schedule-list{
+    margin-top:30px;
+}
+
+.schedule-list h2{
+    color:#3949ab;
+    margin-bottom:15px;
+}
+
+.schedule-item{
+    background:#f8f9ff;
+    border-left:6px solid #7e57c2;
+    padding:18px;
+    margin-bottom:15px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.05);
+}
+
+.schedule-item h3{
+    color:#4527a0;
+    margin-bottom:8px;
+}
+
+.schedule-item p{
+    color:#555;
+    margin:5px 0;
+}
+
+.schedule-item button{
+    margin-top:10px;
+    padding:8px 16px;
+    border:none;
+    border-radius:8px;
+    background:#ef5350;
+    color:white;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.schedule-item button:hover{
+    background:#e53935;
+}
+
+@media(max-width:768px){
+    .planner-card{
+        padding:20px;
+    }
+
+    .planner-card h1{
+        font-size:1.6rem;
+    }
+}
